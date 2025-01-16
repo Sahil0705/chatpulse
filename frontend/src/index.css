@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 body {
-  background: url(mountains.jpg);
+  background: url(../public/mountains.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
