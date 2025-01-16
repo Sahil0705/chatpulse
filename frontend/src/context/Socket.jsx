@@ -16,7 +16,7 @@ const SocketProvider = ({ children }) => {
     useEffect(() => {
         if (authUser) {
             // Initialize socket connection
-            socketRef.current = io(`${BASE_URL}`, {
+            socketRef.current = io(``, {
                 query: {
                     userId: authUser._id,
                 },
