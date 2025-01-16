@@ -73,7 +73,7 @@ const Sidebar = () => {
             <OtherUsers/> 
             <div className='mt-2'>
                 {/* <button onClick={logoutHandler} className='btn btn-sm'>Logout</button> */}
-                <Logout authUser={authUser} onLogout={logoutHandler} />
+                { authUser && <Logout authUser={authUser} onLogout={logoutHandler} />}
             </div>
         </div>
     )
