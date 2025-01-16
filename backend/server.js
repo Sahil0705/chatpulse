@@ -27,6 +27,13 @@ app.use(cors(corsOption));
 app.use("/api/v1/user",userRoute); 
 app.use("/api/v1/message",messageRoute);
  
+if (process.env.NODE_ENV === "production") {
+	app.use(express.static(path.join(__dirname, "/frontend/dist")));
+
+	app.get("*", (req, res) => {
+		res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+	});
+}
 
 server.listen(PORT, ()=>{
     connectDB();
