@@ -56,7 +56,7 @@ const Login = () => {
               onChange={(e) => setUser({ ...user, username: e.target.value })}
               className='w-full input input-bordered h-10'
               type="text"
-              placeholder='Username' />
+              placeholder='test1: Ramesh315, test2: Sarthak194' />
           </div>
           <div>
             <label className='label p-2'>
@@ -67,7 +67,7 @@ const Login = () => {
               onChange={(e) => setUser({ ...user, password: e.target.value })}
               className='w-full input input-bordered h-10'
               type="password"
-              placeholder='Password' />
+              placeholder='test1: abc123, test2: wer456' />
           </div>
           <p className='text-center my-2'>Don't have an account? <Link to="/signup" className='hover:underline'> Signup </Link></p>
           <div>
